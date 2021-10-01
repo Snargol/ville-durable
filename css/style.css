@@ -1,0 +1,367 @@
+/**************************************************
+
+	AUTHOR: ThemeGap
+	TEMPLATE: SHOCK
+	VERSION: 1.1
+
+*********************************************************/
+
+	@charset "utf-8";
+
+/**************************************************
+
+	TABLE OF CONTENTS
+	1. GENERAL STYLES
+	2. BACKGROUND STYLES
+	3. CONTENT STYLES
+	4. COUNTDOWN STYLES
+	5. MODAL/FORM STYLES
+
+*********************************************************/
+
+/*******************************************************************/
+/* 1. General styles */
+
+html, body {
+	
+	font-family: 'Work Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 200;
+	line-height: 26px;
+	color: #fff;
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+a, a:active, a:focus, a:hover, a:visited {
+	text-decoration: none;
+	color: #0060A9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 30px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+.page-loader {
+	background: #000;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 200;
+}
+
+.loader-img {
+	background: url(../images/loader.gif) no-repeat center center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.overlay { 
+	background: rgba(0,0,0,.7);
+	height: 100%;	
+	position: fixed;
+	min-height: 100vh;
+	width: 100%;
+	z-index: -1;
+}
+
+.main {
+	padding-top: 125px;
+	min-height: 100vh;
+}
+
+@-webkit-keyframes scale {
+	0% {opacity: 0; transform: scale(0.0); -webkit-transform: scale(0.0);}
+	100% {opacity: 1; transform: scale(1.0); -webkit-transform: scale(1.0);}
+}
+@-moz-keyframes scale {
+	0% {opacity: 0; transform: scale(0.0); -webkit-transform: scale(0.0);}
+	100% {opacity: 1; transform: scale(1.0); -webkit-transform: scale(1.0);}
+}
+@-o-keyframes scale {
+	0% {opacity: 0; transform: scale(0.0); -webkit-transform: scale(0.0);}
+	100% {opacity: 1; transform: scale(1.0); -webkit-transform: scale(1.0);}
+}
+@keyframes scale {
+	0% {opacity: 0; transform: scale(0.0); -webkit-transform: scale(0.0);}
+	100% {opacity: 1; transform: scale(1.0); -webkit-transform: scale(1.0);}
+}
+
+.scale {
+	-webkit-animation: scale 3s;
+	-moz-animation:    scale 3s;
+	-o-animation:      scale 3s;
+	animation:         scale 3s;
+}
+
+/*******************************************************************/
+/* 2. Background styles */
+
+.particles-bg {
+	background: url(../images/bubbles-bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+canvas {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.image-bg {
+	background: url(../images/image-bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.gradient-bg {
+	background: linear-gradient(90deg, #0060A9, #0087EF, #FF4900, #CD3A00);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	-moz-animation: gradient 15s ease infinite;
+	animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+
+@-moz-keyframes gradient {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+
+@keyframes gradient {
+	0% { background-position: 0% 50% }
+	50% { background-position: 100% 50% }
+	100% { background-position: 0% 50% }
+}
+
+.color-bg {
+	background: #2FA3FC;
+}
+
+.bubbles-bg {
+	background: url(../images/bubbles-bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+#bubbleContainer {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.bubble {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background: rgba(255, 255, 255, .5);
+}
+
+/*******************************************************************/
+/* 3. Content styles */
+
+.logo {
+	width: 20%;
+}
+
+.page-header {
+	text-align: center;
+}
+
+.page-header, .countdown-content {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.countdown-content {
+	margin-top: 25px;
+	text-align: center;
+}
+
+.countdown-content h1 {
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.countdown-content h1 span {
+ 	color: #0087EF;
+}
+
+.buttons {
+	margin-top: 25px;
+}
+
+.custom-btn {
+	transition: all 0.4s ease;
+	color: #fff;
+	cursor: pointer;
+	padding: 10px 20px;
+	border-radius: 3px;
+	border: none;
+	background: #0087EF;
+}
+.custom-btn:hover {
+	background: #0060A9;
+}
+
+.social-media {
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.social-media a {
+	transition: all 0.4s ease;
+	color: #fff;
+	display: inline-block;
+	line-height: 30px;
+	height: 30px;
+	border-radius: 3px;
+	width: 30px;
+	border: 1px solid #fff;
+}
+
+.social-media a:hover {
+	color: #fff;
+	background: #0060A9;
+	border: 1px solid #0060A9;
+}
+
+/*******************************************************************/
+/* 4. Countdown styles */
+
+.time {
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+#dayTimer, #hourTimer, #minuteTimer, #secondTimer {
+	font-size: 40px;
+	display: inline-block;
+	padding: 35px 25px 25px 25px;
+}
+
+#day_title, #hour_title, #minute_title, #second_title {
+	font-size: 15px;
+	float: right;
+	margin: 8px 5px;
+}
+
+.time span {
+	display: inline-block;
+	min-width: 50px;
+}
+
+/*******************************************************************/
+/* 5. Modal/form styles */
+
+.modal-open {
+	padding-right: 0 !important;
+}
+
+#moreModal, #contactModal {
+	background: rgba(0,0,0,.9);
+}
+
+#moreModal .modal-content {
+	margin-top: 50px;
+  	width: 100%;
+	border: none;
+	background: none;
+}
+
+#moreModal .svg-inline--fa {
+	margin-right: 10px;
+}
+
+#moreModal .modal-content .close {
+	color: #fff;
+	font-size: 30px;
+	margin: 25px auto 50px auto;
+	text-align: center;
+}
+
+#moreModal .modal-dialog {
+	max-width: 700px;
+}
+
+#moreModal .modal-top {
+	text-align: center;
+}
+
+#moreModal .modal-bottom {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.info-item {
+	margin-top: 25px;
+}
+
+.info-item h3 {
+	font-size: 25px;
+}
+
+#contactModal .modal-content {
+	background: rgba(0,0,0,.7);
+	border: 1px solid #0087EF;
+	margin-top: 150px;
+	padding: 40px 20px;
+}
+
+#contactModal .modal-dialog {
+	max-width: 700px;
+}
+
+#contactModal .modal-content .close {
+	color: #fff;
+	font-size: 30px;
+}
+
+#contactModal .modal-header {
+	border: none;
+	padding: 10px 0px 20px 0px;
+}
+
+.success, .error {
+	padding-top: 10px;
+}
+
+.contact-btn {
+	transition: all 0.4s ease;
+	color: #fff;
+	cursor: pointer;
+	padding: 10px 20px;
+	border-radius: 3px;
+	border: none;
+	background: #0087EF;
+}
+
+.contact-btn:hover {
+	background: #0060A9;
+}
+
+#contactform input {
+	height: 40px;
+}
