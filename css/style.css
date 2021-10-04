@@ -280,7 +280,7 @@ canvas {
 	padding-right: 0 !important;
 }
 
-#moreModal, #contactModal {
+#moreModal, #contactModal , #moresponsors {
 	background: rgba(0,0,0,.9);
 }
 
@@ -330,20 +330,61 @@ canvas {
 	padding: 40px 20px;
 }
 
+
 #contactModal .modal-dialog {
 	max-width: 700px;
 }
+
+
 
 #contactModal .modal-content .close {
 	color: #fff;
 	font-size: 30px;
 }
 
+
+
 #contactModal .modal-header {
 	border: none;
 	padding: 10px 0px 20px 0px;
 }
 
+
+#moresponsors .modal-content {
+	margin-top: 50px;
+  	width: 100%;
+	border: none;
+	background: none;
+}
+
+#moresponsors .svg-inline--fa {
+	margin-right: 10px;
+}
+
+#moresponsors .modal-content .close {
+	color: #fff;
+	font-size: 30px;
+	margin: 25px auto 50px auto;
+	text-align: center;
+}
+
+#moresponsors .modal-dialog {
+	max-width: 700px;
+}
+
+#moresponsors .modal-top {
+	text-align: center;
+}
+
+#moresponsors .modal-bottom {
+	text-align: center;
+	margin-top: 50px;
+}
+
+#imagesponsor {
+	object-fit: content;
+	max-width: 100%;
+}
 .success, .error {
 	padding-top: 10px;
 }
