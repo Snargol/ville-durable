@@ -92,6 +92,15 @@
 						<div class="buttons col-sm-12">
 							<button class="custom-btn toggle-more" type="button" data-toggle="modal" data-target="#moreModal">More information</button>
 							<button class="custom-btn" type="button" data-toggle="modal" data-target="#contactModal">Contact</button>
+							
+							
+							<!-- Modifications Nour-->
+							<button class="custom-btn toggle-more" type="button" onclick="javascript:viewImage('image');" data-toggle="modal" data-target="#moresponsors">Sponsors</button>
+
+
+
+
+
 						</div>
 					</div>
 					<div class="row">
@@ -114,11 +123,12 @@
     			<div class="modal-content">
 					<div class="container-fluid">
     					<div class="row">
+							<!-- ICON "croix" -->
 							<button type="button" class="close toggle-more" data-dismiss="modal" aria-label="Close">
           						<span aria-hidden="true"><i class="far fa-window-close"></i></span>
         					</button>
 								<div class="modal-top col-sm-12">
-									<h2>More About SHOCK</h2>
+									<h2>À propos de l'événement Ville durable Entreprise 4.0</h2>
 									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
 								</div>
 						</div>
@@ -155,6 +165,7 @@
 					<div class="container-fluid">
 						<div class="modal-header">
         					<h5 class="modal-title">Contact Us</h5>
+							<!-- ICON "croix" -->
         					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
           						<span aria-hidden="true"><i class="far fa-window-close"></i></span>
         					</button>
@@ -190,6 +201,19 @@
 			</div>
 		</div>
 		
+		<!-- Modifications Nour-->
+		<!-- class="modal fade" : adds a transition effect which fades the modal in and out -->
+		<div id="moresponsors" class="modal fade" data-backdrop="static">
+			<script type="text/javascript">
+				function viewImage(id) {
+					document.getElementById(id).innerHTML="<img src='images/sponsor.jpg'>";
+				}
+			</script>
+	 
+			<!-- <div id="bouton" onclick="javascript:viewImage('image');"> Afficher l'image  </div>
+			<div id="image"></div> -->
+
+
 		<!-- javascript-files -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/fontawesome-all.min.js"></script>
