@@ -20,10 +20,10 @@ $(document).ready(function () {
     const partJson = {
         "particles": {
             "number": {
-                "value": 80,
+                "value": 70,
                 "density": {
                     "enable": true,
-                    "value_area": 800
+                    "value_area": 510
                 }
             },
             "color": {
@@ -33,7 +33,7 @@ $(document).ready(function () {
                 "type": "circle",
                 "stroke": {
                     "width": 0,
-                    "color": "#000000"
+                    "color": "#2f0000"
                 },
                 "polygon": {
                     "nb_sides": 5
@@ -45,7 +45,7 @@ $(document).ready(function () {
                 }
             },
             "opacity": {
-                "value": 0.5,
+                "value": 0.1122388442605866,
                 "random": false,
                 "anim": {
                     "enable": false,
@@ -66,22 +66,22 @@ $(document).ready(function () {
             },
             "line_linked": {
                 "enable": true,
-                "distance": 150,
+                "distance": 112.2388442605866,
                 "color": "#ffffff",
                 "opacity": 0.4,
-                "width": 1
+                "width": 1.2827296486924182
             },
             "move": {
                 "enable": true,
-                "speed": 6,
+                "speed": 3,
                 "direction": "none",
-                "random": false,
+                "random": true,
                 "straight": false,
-                "out_mode": "out",
+                "out_mode": "bounce",
                 "bounce": false,
                 "attract": {
                     "enable": false,
-                    "rotateX": 600,
+                    "rotateX": 1282.7296486924183,
                     "rotateY": 1200
                 }
             }
@@ -94,8 +94,8 @@ $(document).ready(function () {
                     "mode": "repulse"
                 },
                 "onclick": {
-                    "enable": false,
-                    "mode": "push"
+                    "enable": true,
+                    "mode": "repulse"
                 },
                 "resize": true
             },

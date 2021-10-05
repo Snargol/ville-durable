@@ -165,6 +165,12 @@ canvas {
 	background-position: center;
 }
 
+.hover-color:hover {
+	color: #1c94c4 !important;
+	cursor: pointer;
+}
+
+
 #bubbleContainer {
 	position: absolute;
 	height: 100%;

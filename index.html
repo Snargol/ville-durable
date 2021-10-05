@@ -1,251 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		
-		<meta charset="utf-8">
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="author" content="ThemeGap">
-    	<meta name="description" content="Shock - Coming Soon Template">
-    	<meta name="keywords" content="html, one page, bootstrap, creative, countdown, clean, coming, soon">
+<head>
 
-		<title>Ville durable</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nour & Anatole">
+    <meta name="description" content="Janvier 2022, Orléans, CESI. Venez découvrir les thèmes de la ville durable de demain durant cet évènement organisé par les
+                        étudiants CESI en 5ème année spécialité informatique. ">
+    <meta name="keywords"
+          content="cesi, orleans, technologie, conference, janvier 2022, ville durable, smart city, industry 4.0, CESI, A5, informatique, futur, Ingénieur, Nour El Houda Khelifi, Anatole Couasnon, Nathanaël Aigret, De Castro Axel, Didier joël, Gouache Eliott, Le Gal Bastien, Marjolet Louis, Vaz Vicente, Do patrocinio lourenco thomas, Drapier Nicolas, Jasserand Maxime">
 
-		<script src="./js/particles.js"></script>
-		<!-- Bootstrap CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<!-- Custom CSS -->
-		<link href="css/style.css" rel="stylesheet">
-		<link href="css/responsive.css" rel="stylesheet">
-    	<!-- Google fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="images/favicon.png">
-		
-	</head>
-	
-	<body class="particles-bg">
-		
-		<!-- Page loader -->
-		<div class="page-loader">
-			<div class="loader-img"></div>
-		</div>
-		
-		<!-- Particles background -->
-		<div id="particles-js"></div>
-		
-		<!-- Overlay -->
-		<div class="overlay"></div>
-		
-		<!-- Main content area -->
-		<div class="main">
-			<!-- Header area -->
-			<header class="page-header">
-				<div class="container">
-					<div class="row">
-						<!-- Logo -->
-						<div class="page-logo col-sm-12">
-							<img src="images/logo.png" alt="logo" class="logo">
-						</div>
-					</div>
-				</div>
-			</header>
-			
-			<!-- Content area -->
-			<div class="countdown-content">
-				<div class="container">
-					<div class="row">
-						<!-- Title and text -->
-						<div class="countdown-text col-sm-12">
-							<h1>We are <span>coming</span> soon</h1>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-						</div>
-					</div>
-					<div class="row">
-						<!-- Countdown -->
-						<div class="countdown col-sm-12">
-							<div class="time">
-								<div id="count">
-    								<div id="dayTimer">
-										<span class="days"></span>
-        								<div class="count-title" id="day_title"></div>
-									</div>
-    								<div id="hourTimer">
-										<span class="hours"></span>
-        								<div class="count-title" id="hour_title"></div>
-									</div>
-    								<div id="minuteTimer">
-										<span class="minutes"></span>
-        								<div class="count-title" id="minute_title"></div>
-									</div>
-    								<div id="secondTimer">
-										<span class="seconds"></span>
-        								<div class="count-title" id="second_title"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<!-- Buttons -->
-						<div class="buttons col-sm-12">
-							<button class="custom-btn toggle-more" type="button" data-toggle="modal" data-target="#moreModal">More information</button>
-							<button class="custom-btn" type="button" data-toggle="modal" data-target="#contactModal">Contact</button>
+    <title>Ville durable</title>
 
-							<!-- Modifications Nour-->
-							<button class="custom-btn toggle-more" type="button" onclick="javascript:viewImage('image');" data-toggle="modal" data-target="#moresponsors">Sponsors</button>
+    <script src="./js/particles.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png">
 
+</head>
 
-						</div>
-					</div>
-					<div class="row">
-						<!-- Social media -->
-<!--						<div class="social-media col-sm-12">-->
-<!--							<a href="#"><i class="fab fa-twitter"></i></a>-->
-<!--							<a href="#"><i class="fab fa-facebook-f"></i></a>-->
-<!--							<a href="#"><i class="fab fa-google-plus"></i></a>-->
-<!--							<a href="#"><i class="fab fa-instagram"></i></a>-->
-<!--							<a href="#"><i class="fab fa-linkedin"></i></a>-->
-<!--						</div>-->
-					</div>
-				</div>
-			</div>
-		</div>
+<body class="particles-bg">
 
-		<!-- More modal area -->
-		<div id="moreModal" class="modal fade" data-backdrop="static">
-			<div class="modal-dialog" role="document">
-    			<div class="modal-content">
-					<div class="container-fluid">
-    					<div class="row">
-							<!-- ICON "croix" -->
-							<button type="button" class="close toggle-more" data-dismiss="modal" aria-label="Close">
-          						<span aria-hidden="true"><i class="far fa-window-close"></i></span>
-        					</button>
-								<div class="modal-top col-sm-12">
-									<h2>More About SHOCK</h2>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
-								</div>
-						</div>
-						<div class="row">
-							<div class="info-item col-sm-4">
-								<h3><i class="fas fa-phone"></i>Phone</h3>
-									<p>Phone: (000) 456 1234
-									<br>
-									Mobile: (000) 456 0101
-									</p>
-							</div>
-							<div class="info-item col-sm-4">
-								<h3><i class="fas fa-envelope"></i>Email</h3>
-									<p>Support@example.com
-									<br>
-									John@example.com
-									</p>
-							</div>
-							<div class="info-item col-sm-4">
-								<h3><i class="fas fa-map-marker-alt"></i>Address</h3>
-									<p>654 Your Street, Your City, DB 12345
-									</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+<!-- Page loader -->
+<div class="page-loader">
+    <div class="loader-img"></div>
+</div>
 
-		<!-- Contact modal area -->
-		<div id="contactModal" class="modal fade">
-			<div class="modal-dialog" role="document">
-    			<div class="modal-content">
-					<div class="container-fluid">
-						<div class="modal-header">
-        					<h5 class="modal-title">Contact Us</h5>
-							<!-- ICON "croix" -->        					
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          						<span aria-hidden="true"><i class="far fa-window-close"></i></span>
-        					</button>
-      					</div>
-    					<form id="contactform" action="contact.php" method="post">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group"> 
-										<input type="text" class="form-control" name="name" placeholder="Name*" required> 
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<input type="email" class="form-control" name="email" placeholder="Email*" required> 
-									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="form-group"> 
-										<textarea class="form-control" name="message" placeholder="Message*" rows="5" required></textarea>
-									</div>
-									<div class="btn-contain">
-										<button type="submit" class="contact-btn">Send message</button>
-									</div>
-								</div>
-								<div class="col-md-12">
-									<p class="success" style="display:none;">Thank you! We will be in touch with you soon.</p>
-									<p class="error" style="display:none;">Oops! Something went wrong, please try again.</p>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
+<!-- Particles background -->
+<div id="particles-js"></div>
+
+<!-- Overlay -->
+<div class="overlay"></div>
+
+<!-- Main content area -->
+<div class="main">
+    <!-- Header area -->
+    <header class="page-header">
+        <div class="container">
+            <div class="row">
+                <!-- Logo -->
+                <div class="page-logo col-sm-12">
+                    <img src="images/logo.png" alt="logo" class="logo">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content area -->
+    <div class="countdown-content">
+        <div class="container">
+            <div class="row">
+                <!-- Title and text -->
+                <div class="countdown-text col-sm-12">
+                    <h1>Conférence ville durable – Smart City & Industry 4.0</h1>
+                    <p>Venez découvrir les thèmes de la ville durable de demain durant cet évènement organisé par les
+                        étudiants CESI en 5ème année spécialité informatique. Janvier 2022. Orléans.</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Countdown -->
+                <div class="countdown col-sm-12">
+                    <div class="time">
+                        <div id="count">
+                            <div id="dayTimer">
+                                <span class="days"></span>
+                                <div class="count-title" id="day_title"></div>
+                            </div>
+                            <div id="hourTimer">
+                                <span class="hours"></span>
+                                <div class="count-title" id="hour_title"></div>
+                            </div>
+                            <div id="minuteTimer">
+                                <span class="minutes"></span>
+                                <div class="count-title" id="minute_title"></div>
+                            </div>
+                            <div id="secondTimer">
+                                <span class="seconds"></span>
+                                <div class="count-title" id="second_title"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Buttons -->
+                <div class="buttons col-sm-12">
+                    <button class="custom-btn toggle-more" type="button" data-toggle="modal" data-target="#moreModal">
+                        Plus d'informations
+                    </button>
+                    <button class="custom-btn" type="button" data-toggle="modal" data-target="#contactModal">Contact
+                    </button>
+
+                    <!-- Modifications Nour-->
+                    <button class="custom-btn toggle-more" type="button" onclick="javascript:viewImage('image');"
+                            data-toggle="modal" data-target="#moresponsors">Sponsors
+                    </button>
 
 
+                </div>
+            </div>
+            <div class="row">
+                <!-- Social media -->
+                <!--						<div class="social-media col-sm-12">-->
+                <!--							<a href="#"><i class="fab fa-twitter"></i></a>-->
+                <!--							<a href="#"><i class="fab fa-facebook-f"></i></a>-->
+                <!--							<a href="#"><i class="fab fa-google-plus"></i></a>-->
+                <!--							<a href="#"><i class="fab fa-instagram"></i></a>-->
+                <!--							<a href="#"><i class="fab fa-linkedin"></i></a>-->
+                <!--						</div>-->
+            </div>
+        </div>
+    </div>
+</div>
 
-		<!-- Modifications Nour-->
+<!-- More modal area -->
+<div id="moreModal" class="modal fade" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- ICON "croix" -->
+                    <button type="button" class="close toggle-more" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="far fa-window-close"></i></span>
+                    </button>
+                    <div class="modal-top col-sm-12">
+                        <!--                        <h2>En savoir plus</h2>-->
+                        <img id="imagesponsor" src="images/en_savoir_plus.JPG" alt="cesi ville durable orléans">
+                    </div>
+                </div>
+                <!--                <div class="row">-->
+                <!--                    <div class="info-item col-sm-4">-->
+                <!--                        <h3><i class="fas fa-phone"></i>Phone</h3>-->
+                <!--                        <p>Phone: (000) 456 1234-->
+                <!--                            <br>-->
+                <!--                            Mobile: (000) 456 0101-->
+                <!--                        </p>-->
+                <!--                    </div>-->
+                <!--                    <div class="info-item col-sm-4">-->
+                <!--                        <h3><i class="fas fa-envelope"></i>Email</h3>-->
+                <!--                        <p>Support@example.com-->
+                <!--                            <br>-->
+                <!--                            John@example.com-->
+                <!--                        </p>-->
+                <!--                    </div>-->
+                <!--                    <div class="info-item col-sm-4">-->
+                <!--                        <h3><i class="fas fa-map-marker-alt"></i>Address</h3>-->
+                <!--                        <p>654 Your Street, Your City, DB 12345-->
+                <!--                        </p>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
 
-		<!-- Contact modal area -->
-		<!-- class="modal fade" : adds a transition effect which fades the modal in and out -->
-		<div id="moresponsors" class="modal fade" data-backdrop="static">
-			<div class="modal-dialog" role="document">
-    			<div class="modal-content">
-					<div class="container-fluid">
-    					<div class="row">
-							<!-- ICON "croix" -->
-							<button type="button" class="close toggle-more" data-dismiss="modal" aria-label="Close">
-          						<span aria-hidden="true"><i class="far fa-window-close"></i></span>
-        					</button>
-								<div class="modal-top col-sm-12">
+<!-- Contact modal area -->
+<div id="contactModal" class="modal fade">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="container-fluid">
+                <div class="modal-header">
+                    <h5 class="modal-title">Nous contacter</h5>
+                    <!-- ICON "croix" -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="far fa-window-close"></i></span>
+                    </button>
+                </div>
+                <!--                <form id="contactform" action="contact.php" method="post">-->
+                <!--                    <div class="row">-->
+                <!--                        <div class="col-md-6">-->
+                <!--                            <div class="form-group">-->
+                <!--                                <input type="text" class="form-control" name="name" placeholder="Name*" required>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                        <div class="col-md-6">-->
+                <!--                            <div class="form-group">-->
+                <!--                                <input type="email" class="form-control" name="email" placeholder="Email*" required>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                        <div class="col-md-12">-->
+                <!--                            <div class="form-group">-->
+                <!--                                <textarea class="form-control" name="message" placeholder="Message*" rows="5"-->
+                <!--                                          required></textarea>-->
+                <!--                            </div>-->
+                <!--                            <div class="btn-contain">-->
+                <!--                                <button type="submit" class="contact-btn">Send message</button>-->
+                <!--                            </div>-->
+                <!--                        </div>-->
+                <!--                        <div class="col-md-12">-->
+                <!--                            <p class="success" style="display:none;">Thank you! We will be in touch with you soon.</p>-->
+                <!--                            <p class="error" style="display:none;">Oops! Something went wrong, please try again.</p>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </form>-->
+                <p>Envoyez nous un message à l'adresse email suivante : <span onclick="openEmail()" class="hover-color">cesi.ville.durable@gmail.com</span>
+                </p>
 
-									<img id="imagesponsor" src="images/plaquettesponsor.jpg">
+                <script>
+                    function openEmail() {
+                        window.location.href = "mailto:cesi.ville.durable@gmail.com?subject=Contact CESI Orléans Ville durable&body=saisissez votre message ici";
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
 
-								</div>
-						</div>
 
-					</div>
-				</div>
-			</div>
-		</div>
-							
-							<!-- <script type="text/javascript">
-							function viewImage(id) {
-								document.getElementById(id).src = "images/sponsor.png";
-													}
-							</script>
-			</div>
-				</div>
-					</div>
-						</div> -->
-			<!-- <div id="bouton" onclick="javascript:viewImage('image');"> Afficher l'image  </div>
-			<div id="image"></div> -->		
-	 </div>	
-		
+<!-- Modifications Nour-->
 
-		<!-- javascript-files -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/fontawesome-all.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/particles.min.js"></script>
-		<script src="js/countdown.js"></script>
-		<script src="js/contact.js"></script>
-		<script src="js/main.js"></script>
-		
-	</body>
+<!-- Contact modal area -->
+<!-- class="modal fade" : adds a transition effect which fades the modal in and out -->
+<div id="moresponsors" class="modal fade" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- ICON "croix" -->
+                    <button type="button" class="close toggle-more" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="far fa-window-close"></i></span>
+                    </button>
+                    <div class="modal-top col-sm-12">
+
+                        <img id="imagesponsor" src="images/plaquettesponsor.jpg">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <script type="text/javascript">
+function viewImage(id) {
+    document.getElementById(id).src = "images/sponsor.png";
+                        }
+</script>
+</div>
+</div>
+</div>
+</div> -->
+<!-- <div id="bouton" onclick="javascript:viewImage('image');"> Afficher l'image  </div>
+<div id="image"></div> -->
+</div>
+
+
+<!-- javascript-files -->
+<script src="js/jquery.min.js"></script>
+<script src="js/fontawesome-all.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/main.js"></script>
+
+</body>
 </html>	
